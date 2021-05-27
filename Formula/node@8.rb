@@ -1,20 +1,13 @@
 class NodeAT8 < Formula
   desc "Platform built on V8 to build network applications"
-  homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v8.15.1/node-v8.15.1.tar.xz"
-  sha256 "6b6486a3f452624941f6e11dd5f878c298d43e9c21b5f43ca1721dc7ce25add1"
-
-  bottle do
-    cellar :any
-    sha256 "99d7b256e5090592344f21eba78066a1668e4001b2d0d4906a7b805f13022492" => :mojave
-    sha256 "21efe0a7fd4105434e0ce75a66554f8ccaee4adaa20c1712121a44f51931c58b" => :high_sierra
-    sha256 "5ccba12493760031b79345b84a6b4c662cbc387ecb1fd4c34e7b9af2dbcc4ea8" => :sierra
-  end
+  homepage 'https://nodejs.org/'
+  url 'https://nodejs.org/dist/v8.16.2/node-v8.16.2.tar.xz'
+  sha256 '8c16b500ad74c1b1bde099996c287eeed5a4b2ab0efdf5d94d1d683cc2654ec3'
 
   keg_only :versioned_formula
 
   depends_on "pkg-config" => :build
-  depends_on "python@2" => :build
+  depends_on "python@3" => :build
   depends_on "icu4c"
 
   def install
