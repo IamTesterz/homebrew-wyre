@@ -4,8 +4,6 @@ class NodeAT8 < Formula
   url 'https://nodejs.org/dist/v8.16.2/node-v8.16.2.tar.xz'
   sha256 '8c16b500ad74c1b1bde099996c287eeed5a4b2ab0efdf5d94d1d683cc2654ec3'
 
-  keg_only :versioned_formula
-
   depends_on "pkg-config" => :build
   depends_on "python@3" => :build
   depends_on "icu4c"
